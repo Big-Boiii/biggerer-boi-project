@@ -1,0 +1,46 @@
+Matrix Multiplication: 
+	1. matmult_gpu1 - One Thread (Maria)
+		a. Write it
+	2. matmult_gpu2 - One element of C per thread
+		a. write it
+		b. Compare it it to DGEMM with different Matrix Sizes
+		c. How much time for CPU <-> GPU
+	3. matmult3_gpu3  - two elements per thread 
+		a. Write it
+	4. matmult4_gpu4 - several elements per thread
+		a. write it
+		b. compare to dgemm, _gpu3, _gpu2
+		c. Speed-Up  and why?
+	5. matmult_gpu5 - shared memory for A and B
+		a. write it 
+		b. time dfor different matrices
+		c. compare to dgemm and other kernes
+		d. speedup and why?
+	6. matmult_gpulib - CUBLAS
+		a. implement function
+		b. profiler (if available)
+	7. Possible improvements? - matmult_gpu6
+	8. Compare all kernels  
+
+Poisson Problem: 
+	1. jacobi_gpu1:  (Klara)
+		a. take quickest jacobi, remove stopping criterion, implement for 1-thread jacobi - every single iteration step done by gpu ----DONE----
+		b. time and compare to reference (CPU-Jacobi)
+	2. jacobi_gpu2: 
+		a. one thread per grid point - still for-loop on CPU
+		b. Profiler (if available) 
+		c. Limits on hardware
+		d. Improvements?
+	3. jacobi_gpu3:
+		a. Split versions up to two GPU0 and GPU1
+		b. What's PeerAcces (enable it)
+		c. Compare performance to gpu1 and gpu2 and baseline
+	4. jacobi_gpu4:
+		a. take jacobi_gpu2 and add stopping criterion -> sum reduction
+		b. overhead for norm in GPU vs CPU?
+
+Additional Tasks: 
+Make sh-file (plus determine matrix sizes) (Klara)
+Make the plotty (Klara)
+Create a Repo (Jorge)
+Create Overleaf (Jorge)
