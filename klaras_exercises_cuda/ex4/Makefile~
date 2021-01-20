@@ -1,0 +1,47 @@
+TARGET	= mxv
+OBJS	= main.o mxv.o
+
+OPT	= -g -O3
+ISA	= 
+PARA	= -fopenmp
+
+XOPTS = -Xptxas=-v -arch=sm_80 -lineinfo
+
+CC	= gcc
+
+CCC	= g++
+CXX	= nvcc
+CXXFLAGS= --compiler-options "$(OPT) $(PARA)" $(XOPTS) -I $(PNGWRTIPATH)
+
+CFLAGS	= $(OPT) $(ISA) $(PARA) $(XOPT)
+
+F90C  	= gfortran
+LIBS	=  
+
+CUDA_PATH ?= /appl/cuda/11.1
+INCLUDES = -I$(CUDA_PATH)/include -I$(CUDA_PATH)/samples/common/inc
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS) 
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJS) $(LIBS)
+
+
+.SUFFIXES: .cu .c
+.cu.o:
+	$(CXX) -o $*.o -c $*.cu $(CXXFLAGS) $(SOFLAGS) $(INCLUDES)
+
+.c.o:
+	$(CCC) -o $*.o -c $*.c $(OPT) $(PARA) $(SOFLAGS) $(INCLUDES)
+
+clean:
+	@/bin/rm -f *.o core
+
+realclean: clean
+	@cd pngwriter/src && $(MAKE) -f  clean
+	@rm -f $(TARGET)
+
+# dependencies
+#
+main.o  : main.cu mxv.h
+mxv.o   : mxv.h

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm -f mxv_omp
+
+cc -xopenmp -g -fast -o mxv_omp mmv.c
+
+
+time OMP_NUM_THREADS=4 ./mvx_omp
+time OMP_NUM_THREADS=2 ./mvx_omp
+time OMP_NUM_THREADS=1 ./mvx_omp
