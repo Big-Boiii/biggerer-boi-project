@@ -27,7 +27,7 @@ Poisson Problem:
 		a. take quickest jacobi, remove stopping criterion, implement for 1-thread jacobi - every single iteration step done by gpu ----DONE----
 		b. time and compare to reference (CPU-Jacobi)
 	2. jacobi_gpu2: 
-		a. one thread per grid point - still for-loop on CPU
+		a. one thread per grid point - still for-loop on CPU ----DONE----
 		b. Profiler (if available) 
 		c. Limits on hardware
 		d. Improvements?
