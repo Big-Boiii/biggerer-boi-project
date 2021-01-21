@@ -1,6 +1,6 @@
 TARGET	= libmatmult.so
 LIBSRCS	= 	matmult_nmk.cu matmult_nkm.cu matmult_mnk.cu matmult_mkn.cu matmult_knm.cu matmult_kmn.cu  matmult_nat.cu matmult_lib.cu \
-			matmult_gpu1.cu matmult_gpu2.cu matmult_gpu3_row.cu matmult_gpu4_5.cu matmult_gpu5.cu
+			matmult_gpu1.cu matmult_gpu2.cu matmult_gpu3_row.cu matmult_gpu4_5.cu matmult_gpu5.cu matmult_gpulib.cu
 LIBOBJS	= $(LIBSRCS:.cu=.o)
 
 OPT	= -g -O3 
