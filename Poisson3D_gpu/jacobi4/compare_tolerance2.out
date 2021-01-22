@@ -1,0 +1,178 @@
+50
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.004565 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.010460 
+100
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.025136 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.063802 
+150
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.108161 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.286022 
+200
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.320220 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.859981 
+250
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.855798 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 2.337433 
+300
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 1.912731 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 5.224437 
+350
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 3.705676 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 10.137544 
+400
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 6.639286 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 18.329090 
+450
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16940 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16946 Killed                  jacobi_gpu44 $c 100 0 5 0
+500
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16952 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16958 Killed                  jacobi_gpu44 $c 100 0 5 0
+550
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16964 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16970 Killed                  jacobi_gpu44 $c 100 0 5 0
+600
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16976 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16982 Killed                  jacobi_gpu44 $c 100 0 5 0
+650
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16988 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 16994 Killed                  jacobi_gpu44 $c 100 0 5 0
+700
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17000 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17006 Killed                  jacobi_gpu44 $c 100 0 5 0
+750
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17012 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17018 Killed                  jacobi_gpu44 $c 100 0 5 0
+800
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17024 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17030 Killed                  jacobi_gpu44 $c 100 0 5 0
+850
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17036 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17042 Killed                  jacobi_gpu44 $c 100 0 5 0
+900
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17048 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17053 Killed                  jacobi_gpu44 $c 100 0 5 0
+950
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17060 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17066 Killed                  jacobi_gpu44 $c 100 0 5 0
+1000
+Second Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17072 Killed                  jacobi_gpu43 $c 100 0 5 0
+Third Version
+/zhome/51/5/153768/.lsbatch/1611338240.9176055.shell: line 23: 17078 Killed                  jacobi_gpu44 $c 100 0 5 0
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-12-24>
+Subject: Job 9176055: <collector> in cluster <dcc> Exited
+
+Job <collector> was submitted from host <n-62-12-23> by user <s202382> in cluster <dcc> at Fri Jan 22 18:57:20 2021
+Job was executed on host(s) <n-62-12-24>, in queue <hpcintrogpu>, as user <s202382> in cluster <dcc> at Fri Jan 22 18:57:14 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu/jacobi4> was used as the working directory.
+Started at Fri Jan 22 18:57:14 2021
+Terminated at Fri Jan 22 18:58:54 2021
+Results reported at Fri Jan 22 18:58:54 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collector
+#BSUB -o compare_tolerance2.out
+#BSUB -q hpcintrogpu
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 30
+#BSUB -gpu "num=1"
+
+for ((c=50; c<=1000; c=c+50))
+do
+    echo $c
+    echo "Second Version"
+    jacobi_gpu43 $c 100 0 5 0
+    echo "Third Version"
+    jacobi_gpu44 $c 100 0 5 0
+done 
+
+
+------------------------------------------------------------
+
+TERM_MEMLIMIT: job killed after reaching LSF memory usage limit.
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time :                                   82.42 sec.
+    Max Memory :                                 2048 MB
+    Average Memory :                             1366.67 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   105 sec.
+    Turnaround time :                            94 sec.
+
+The output (if any) is above this job summary.
+

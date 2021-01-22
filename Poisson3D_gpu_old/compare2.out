@@ -1,0 +1,140 @@
+18
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.002s
+multithreads
+We are going to start the Jacobi-Iteration 
+243.934082 
+58
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m0.037s
+user	0m0.032s
+sys	0m0.003s
+multithreads
+We are going to start the Jacobi-Iteration 
+5360.267578 
+98
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m0.179s
+user	0m0.168s
+sys	0m0.008s
+multithreads
+We are going to start the Jacobi-Iteration 
+30353.669922 
+138
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m0.654s
+user	0m0.636s
+sys	0m0.014s
+multithreads
+We are going to start the Jacobi-Iteration 
+98057.468750 
+178
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m1.614s
+user	0m1.569s
+sys	0m0.031s
+multithreads
+We are going to start the Jacobi-Iteration 
+212722.125000 
+218
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m3.035s
+user	0m2.970s
+sys	0m0.053s
+multithreads
+We are going to start the Jacobi-Iteration 
+392454.875000 
+258
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m5.156s
+user	0m5.047s
+sys	0m0.092s
+multithreads
+We are going to start the Jacobi-Iteration 
+652726.250000 
+298
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+
+real	0m7.913s
+user	0m7.716s
+sys	0m0.137s
+multithreads
+User defined signal 2
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-12-20>
+Subject: Job 9166816: <collector> in cluster <dcc> Exited
+
+Job <collector> was submitted from host <n-62-12-21> by user <s202382> in cluster <dcc> at Thu Jan 21 23:19:08 2021
+Job was executed on host(s) <n-62-12-20>, in queue <hpcintrogpu>, as user <s202382> in cluster <dcc> at Thu Jan 21 23:24:00 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu> was used as the working directory.
+Started at Thu Jan 21 23:24:00 2021
+Terminated at Thu Jan 21 23:54:19 2021
+Results reported at Thu Jan 21 23:54:19 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collector
+#BSUB -o compare2.out
+#BSUB -q hpcintrogpu
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 30
+#BSUB -gpu "num=1"
+
+for ((c=18; c<=1000; c=c+40))
+do
+    echo $c
+    time jacobi_bsln $c 100 0 0
+    echo "multithreads"
+    jacobi_gpu1 $c 100 0 0
+done 
+
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   1790.00 sec.
+    Max Memory :                                 617 MB
+    Average Memory :                             275.88 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1431.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   1823 sec.
+    Turnaround time :                            2111 sec.
+
+The output (if any) is above this job summary.
+

@@ -1,0 +1,144 @@
+25
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 0.003107
+50
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 0.026048
+75
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 0.100297
+100
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 0.209079
+125
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 0.528535
+150
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 0.979496
+175
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 1.663460
+200
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 2.299273
+225
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 3.401483
+250
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 4.529286
+275
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 6.071798
+300
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 7.843616
+325
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 9.802575
+350
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 12.266425
+375
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 15.093008
+400
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 18.382441
+425
+Baseline
+We are going to start the Jacobi-Iteration 
+Iterations: 100 
+Elapsed Time: 22.397700
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-21-77>
+Subject: Job 9174897: <collectorgpu2> in cluster <dcc> Done
+
+Job <collectorgpu2> was submitted from host <n-62-12-23> by user <s202382> in cluster <dcc> at Fri Jan 22 15:24:31 2021
+Job was executed on host(s) <n-62-21-77>, in queue <hpcintro>, as user <s202382> in cluster <dcc> at Fri Jan 22 15:24:33 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu/gpu2_vs_bsl> was used as the working directory.
+Started at Fri Jan 22 15:24:33 2021
+Terminated at Fri Jan 22 15:26:23 2021
+Results reported at Fri Jan 22 15:26:23 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collectorgpu2
+#BSUB -o comparewfklweflkjd.out
+#BSUB -q hpcintro
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 30
+
+for ((c=25; c<=425; c=c+25))
+do
+    echo $c
+    echo "Baseline"
+    jacobi_bsln $c 100 0 0
+
+done 
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   109.29 sec.
+    Max Memory :                                 363 MB
+    Average Memory :                             363.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1685.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   110 sec.
+    Turnaround time :                            112 sec.
+
+The output (if any) is above this job summary.
+

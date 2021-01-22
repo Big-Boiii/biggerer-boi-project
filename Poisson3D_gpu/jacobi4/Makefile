@@ -1,4 +1,4 @@
-TARGET	= jacobi_gpu4
+TARGET	= jacobi_gpu44
 OBJS	= main.o jacobi.o alloc3d.o alloc3d_gpu.o transfer3d_gpu.o
 
 OPT	= -O3

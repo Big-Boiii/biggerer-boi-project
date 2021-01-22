@@ -1,0 +1,189 @@
+Size 100
+Threads
+Tolerance is 5.000000 
+Size of matrix 100 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 0.019348 
+
+real	0m0.028s
+user	0m0.344s
+sys	0m0.011s
+Size 200
+Threads
+Tolerance is 5.000000 
+Size of matrix 200 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 0.296793 
+
+real	0m0.310s
+user	0m4.852s
+sys	0m0.046s
+Size 300
+Threads
+Tolerance is 5.000000 
+Size of matrix 300 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 0.988948 
+
+real	0m1.019s
+user	0m16.032s
+sys	0m0.172s
+Size 400
+Threads
+Tolerance is 5.000000 
+Size of matrix 400 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 2.822928 
+
+real	0m2.888s
+user	0m44.158s
+sys	0m0.563s
+Size 500
+Threads
+Tolerance is 5.000000 
+Size of matrix 500 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 5.381210 
+
+real	0m5.498s
+user	1m23.412s
+sys	0m0.938s
+Size 600
+Threads
+Tolerance is 5.000000 
+Size of matrix 600 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 8.875637 
+
+real	0m9.053s
+user	2m22.553s
+sys	0m1.292s
+Size 700
+Threads
+Tolerance is 5.000000 
+Size of matrix 700 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 14.125800 
+
+real	0m14.397s
+user	3m46.920s
+sys	0m2.105s
+Size 800
+Threads
+Tolerance is 5.000000 
+Size of matrix 800 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 20.813959 
+
+real	0m21.221s
+user	5m34.213s
+sys	0m3.220s
+Size 900
+Threads
+Tolerance is 5.000000 
+Size of matrix 900 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 30.066388 
+
+real	0m30.673s
+user	8m1.241s
+sys	0m4.555s
+Size 1000
+Threads
+Tolerance is 5.000000 
+Size of matrix 1000 
+We are going to start the Jacobi-Iteration 
+Elapsed Time 41.052414 
+
+real	0m41.847s
+user	10m54.816s
+sys	0m6.456s
+Size 1100
+Threads
+/zhome/51/5/153768/.lsbatch/1611340988.9176333.shell: line 13:  8346 Killed                  OMP_NUM_THREADS=16 ./poisson_j $j 100 0 0
+
+real	0m1.083s
+user	0m5.611s
+sys	0m6.620s
+Size 1200
+Threads
+/zhome/51/5/153768/.lsbatch/1611340988.9176333.shell: line 13:  8363 Killed                  OMP_NUM_THREADS=16 ./poisson_j $j 100 0 0
+
+real	0m1.032s
+user	0m5.385s
+sys	0m6.186s
+Size 1300
+Threads
+array u: allocation failed: Cannot allocate memory
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.001s
+Size 1400
+Threads
+array u: allocation failed: Cannot allocate memory
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+Size 1500
+Threads
+array u: allocation failed: Cannot allocate memory
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.001s
+/zhome/51/5/153768/.lsbatch/1611340988.9176333.shell: line 14: syntax error near unexpected token `done'
+/zhome/51/5/153768/.lsbatch/1611340988.9176333.shell: line 14: `done'
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-21-78>
+Subject: Job 9176333: <NONAME> in cluster <dcc> Exited
+
+Job <NONAME> was submitted from host <n-62-12-23> by user <s202382> in cluster <dcc> at Fri Jan 22 19:43:08 2021
+Job was executed on host(s) <24*n-62-21-78>, in queue <hpcintro>, as user <s202382> in cluster <dcc> at Fri Jan 22 19:43:09 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu/baseline_multitreaded> was used as the working directory.
+Started at Fri Jan 22 19:43:09 2021
+Terminated at Fri Jan 22 19:45:18 2021
+Results reported at Fri Jan 22 19:45:18 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -q hpcintro 
+#BSUB -W 30
+#BSUB -n 24
+#BSUM -o big_mlth.out 
+
+for((j=100; j<=1500; j=j+100))
+    do
+	echo "Size" $j
+	echo "Threads" $i
+	time OMP_NUM_THREADS=16 ./poisson_j $j 100 0 0 
+    done
+done
+
+------------------------------------------------------------
+
+TERM_MEMLIMIT: job killed after reaching LSF memory usage limit.
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time :                                   2032.16 sec.
+    Max Memory :                                 24576 MB
+    Average Memory :                             18036.00 MB
+    Total Requested Memory :                     24576.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                20
+    Run time :                                   129 sec.
+    Turnaround time :                            130 sec.
+
+The output (if any) is above this job summary.
+

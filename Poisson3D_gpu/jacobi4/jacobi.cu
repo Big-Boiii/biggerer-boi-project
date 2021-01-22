@@ -56,9 +56,9 @@ __global__ void jacobi_gpu4(double*** u, double***prev_u, double*** f, int N, do
 			u[i_index+1][j_index+1][k_index+1]=temp*denominator;
 			temp2 =  (prev_u[i_index+1][j_index+1][k_index+1] - temp*denominator)*(prev_u[i_index+1][j_index+1][k_index+1] - temp*denominator);
 			value=blockReduceSum(temp2);
-			//V2 value = warpReduceSum(temp2);
+			//value = warpReduceSum(temp2);
 			if ((threadIdx.x % warpSize == 0)&&(threadIdx.y % warpSize == 0)&&(threadIdx.z % warpSize == 0)) atomicAdd(norm, value); 		
-			// V1: atomicAdd(norm,temp2);
+			//atomicAdd(norm,temp2);
 		}
 	
 	//printf("On the GPU we now have matrix:\n");

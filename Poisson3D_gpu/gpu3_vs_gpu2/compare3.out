@@ -1,0 +1,203 @@
+25
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 0.007148 0.103842 
+50
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 0.039895 0.139807 
+75
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 0.131205 0.230238 
+100
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 0.304285 0.409817 
+125
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 0.575199 0.685297 
+150
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 1.013738 1.137868 
+175
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 1.577682 1.719101 
+200
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 2.862091 3.023382 
+225
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 3.342045 3.535447 
+250
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 4.579942 4.805250 
+275
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 6.078013 6.362435 
+300
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 7.899904 8.236008 
+325
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 10.377767 10.770202 
+350
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 12.486532 12.960865 
+375
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 15.835824 16.396999 
+400
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 16.499291 17.150172 
+425
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 22.989753 23.767568 
+450
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 26.460751 27.327973 
+475
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 31.855460 32.945428 
+500
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 36.819424 38.077253 
+525
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 42.907443 44.237652 
+550
+gpu3
+We are going to start the Jacobi-Iteration 
+Elapsed Time (both kernels) 48.954110 50.538160 
+575
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3432 Killed                  jacobi_gpu3 $c 100 0 0
+600
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3449 Killed                  jacobi_gpu3 $c 100 0 0
+625
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3461 Killed                  jacobi_gpu3 $c 100 0 0
+650
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3469 Killed                  jacobi_gpu3 $c 100 0 0
+675
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3483 Killed                  jacobi_gpu3 $c 100 0 0
+700
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3499 Killed                  jacobi_gpu3 $c 100 0 0
+725
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3517 Killed                  jacobi_gpu3 $c 100 0 0
+750
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3526 Killed                  jacobi_gpu3 $c 100 0 0
+775
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3534 Killed                  jacobi_gpu3 $c 100 0 0
+800
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3542 Killed                  jacobi_gpu3 $c 100 0 0
+825
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3552 Killed                  jacobi_gpu3 $c 100 0 0
+850
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3560 Killed                  jacobi_gpu3 $c 100 0 0
+875
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3569 Killed                  jacobi_gpu3 $c 100 0 0
+900
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3577 Killed                  jacobi_gpu3 $c 100 0 0
+925
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3586 Killed                  jacobi_gpu3 $c 100 0 0
+950
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3594 Killed                  jacobi_gpu3 $c 100 0 0
+975
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3603 Killed                  jacobi_gpu3 $c 100 0 0
+1000
+gpu3
+/zhome/51/5/153768/.lsbatch/1611343393.9176426.shell: line 22:  3612 Killed                  jacobi_gpu3 $c 100 0 0
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-11-48>
+Subject: Job 9176426: <collectorgpu3> in cluster <dcc> Exited
+
+Job <collectorgpu3> was submitted from host <n-62-12-23> by user <s202382> in cluster <dcc> at Fri Jan 22 20:23:13 2021
+Job was executed on host(s) <2*n-62-11-48>, in queue <hpcintrogpu>, as user <s202382> in cluster <dcc> at Fri Jan 22 20:23:13 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu/gpu3_vs_gpu2> was used as the working directory.
+Started at Fri Jan 22 20:23:13 2021
+Terminated at Fri Jan 22 20:29:20 2021
+Results reported at Fri Jan 22 20:29:20 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collectorgpu3
+#BSUB -o compare3.out
+#BSUB -q hpcintrogpu
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 30
+#BSUB -n 2
+#BSUB -gpu "num=2:mode=exclusive_process"
+
+for ((c=25; c<=1000; c=c+25))
+do
+    echo $c
+    echo "gpu3"
+    jacobi_gpu3 $c 100 0 0
+done 
+
+
+------------------------------------------------------------
+
+TERM_MEMLIMIT: job killed after reaching LSF memory usage limit.
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time :                                   347.72 sec.
+    Max Memory :                                 4096 MB
+    Average Memory :                             2223.40 MB
+    Total Requested Memory :                     4096.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                8
+    Run time :                                   422 sec.
+    Turnaround time :                            367 sec.
+
+The output (if any) is above this job summary.
+

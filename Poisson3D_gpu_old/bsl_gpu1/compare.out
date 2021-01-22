@@ -1,0 +1,114 @@
+15
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 0.128591 
+ Elapsed Time without data copying: 0.128456 
+25
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 0.391990 
+ Elapsed Time without data copying: 0.391804 
+35
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 1.095002 
+ Elapsed Time without data copying: 1.094568 
+45
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 2.376049 
+ Elapsed Time without data copying: 2.375086 
+55
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 4.500468 
+ Elapsed Time without data copying: 4.498827 
+65
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 8.005702 
+ Elapsed Time without data copying: 8.003047 
+75
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 13.816566 
+ Elapsed Time without data copying: 13.813114 
+85
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 20.117607 
+ Elapsed Time without data copying: 20.112776 
+95
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 29.406604 
+ Elapsed Time without data copying: 29.400604 
+105
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 42.301990 
+ Elapsed Time without data copying: 42.293655 
+115
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 56.712987 
+ Elapsed Time without data copying: 56.701213 
+125
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 76.586184 
+ Elapsed Time without data copying: 76.571774 
+135
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 98.532316 
+ Elapsed Time without data copying: 98.513829 
+145
+We are going to start the Jacobi-Iteration 
+Elapsed time with data copying: 121.983389 
+ Elapsed Time without data copying: 121.960134 
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-12-21>
+Subject: Job 9174494: <collector> in cluster <dcc> Done
+
+Job <collector> was submitted from host <n-62-12-23> by user <s202382> in cluster <dcc> at Fri Jan 22 14:47:48 2021
+Job was executed on host(s) <n-62-12-21>, in queue <hpcintrogpu>, as user <s202382> in cluster <dcc> at Fri Jan 22 14:47:44 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu/bsl_gpu1> was used as the working directory.
+Started at Fri Jan 22 14:47:44 2021
+Terminated at Fri Jan 22 14:55:52 2021
+Results reported at Fri Jan 22 14:55:52 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collector
+#BSUB -o compare.out
+#BSUB -q hpcintrogpu
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 30
+#BSUB -gpu "num=1"
+
+for ((c=15; c<=150; c=c+10))
+do
+    echo $c
+    jacobi_gpu1 $c 100 0 0
+done 
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   477.45 sec.
+    Max Memory :                                 81 MB
+    Average Memory :                             61.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1967.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   605 sec.
+    Turnaround time :                            484 sec.
+
+The output (if any) is above this job summary.
+

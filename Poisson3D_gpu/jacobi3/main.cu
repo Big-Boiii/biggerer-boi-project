@@ -5,6 +5,7 @@
 #include "alloc3d.h"
 #include <cuda_runtime_api.h>
 #include <helper_cuda.h>
+#include <omp.h>
 
 #define BLOCK_SIZE 8
 void
@@ -132,11 +133,7 @@ int main(int argc, char *argv[]){
     printf("We are going to start the Jacobi-Iteration \n");
     assign_ufu_old(u_h,f_h,prev_u_h,N, start_T);
     
-    //create event in order to time
-    cudaEvent_t start, stop;
-    float elapsed; 
-    cudaEventCreate(&start); cudaEventCreate(&stop);
-    
+	double time2= omp_get_wtime();
     
     //copy assigned Matrices to GPU
     transfer_3d(u_d, u_h, N,N,N, cudaMemcpyHostToDevice);
@@ -160,9 +157,9 @@ int main(int argc, char *argv[]){
  	checkCudaErrors(cudaDeviceEnablePeerAccess(0,0));
  	
     //start iteration
-    cudaEventRecord(start,0);
+	double time1=omp_get_wtime();
     for (i=0; i< iter_max; i++){
-		printf("At iteration Nr %d \n", i);
+		//printf("At iteration Nr %d \n", i);
 		checkCudaErrors(cudaSetDevice(0));
 		jacobi_gpu2<<<grid_size,block_size>>>(u_d,prev_u_d,f_d,N, step_width, denominator, 0);	
 		cudaDeviceSynchronize();
@@ -177,7 +174,7 @@ int main(int argc, char *argv[]){
 		
 		
 	}
-	cudaEventRecord(stop,0);
+	double elapsed1=omp_get_wtime() - time1;
 
     //copy matrices back to CPU
     cudaSetDevice(0);
@@ -186,11 +183,8 @@ int main(int argc, char *argv[]){
     //print_matrix(u_h,N);
     //print_matrix(prev_u_h,N);
     
-    //stop and destroy events
-    cudaEventSynchronize(stop);
-    cudaEventElapsedTime(&elapsed, start, stop);
-    cudaEventDestroy(start); cudaEventDestroy(stop);
-    printf("%lf \n",elapsed);
+	double elapsed2=omp_get_wtime() - time2; 
+	printf("Elapsed Time (both kernels) %lf %lf \n", elapsed1, elapsed2);
 
     // dump  results if wanted 
     switch(output_type) {
