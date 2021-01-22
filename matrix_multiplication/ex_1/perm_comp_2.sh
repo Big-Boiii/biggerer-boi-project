@@ -13,7 +13,7 @@
 #BSUB -gpu "num=1:mode=exclusive_process"
 #BSUB -W 15
 #BSUB -R "rusage[mem=2048]"
-#BSUB -N
+###BSUB -N
 
 # define the driver name to use
 EXECUTABLE="matmult_f.nvcc"

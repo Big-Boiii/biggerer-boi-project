@@ -41,7 +41,7 @@ matmultgpu4_rowwise(int m, int n, int k, double *A, double *B, double *C) {
     C[(row+5)*n+col]=Cvalue6;
   }
 
-  if ((row == m-5) && (col < n)) {
+  else if ((row == m-5) && (col < n)) {
     for(e=0;e<k;++e) {
         Cvalue1 += A[row*k+e]*B[e*n+col];
         Cvalue2 += A[(row+1)*k+e]*B[e*n+col];

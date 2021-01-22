@@ -89,16 +89,16 @@ void matmult_gpu3(int m, int n, int k, double *A, double *B, double *C){
   numOfThreadsPerBlock.y = BLOCK_SIZE;
 
   // Initializing for colwise
-  blocky = (n+numOfThreadsPerBlock.x-1)/(numOfThreadsPerBlock.x);
-  dim3 numOfBlocks;
-  numOfBlocks.x = (blocky+1)/2;
-  numOfBlocks.y = (m+numOfThreadsPerBlock.y-1)/(numOfThreadsPerBlock.y);
+  // blocky = (n+numOfThreadsPerBlock.x-1)/(numOfThreadsPerBlock.x);
+  // dim3 numOfBlocks;
+  // numOfBlocks.x = (blocky+1)/2;
+  // numOfBlocks.y = (m+numOfThreadsPerBlock.y-1)/(numOfThreadsPerBlock.y);
 
   // Initializing for rowwise
-  // blocky = (m+numOfThreadsPerBlock.y-1)/(numOfThreadsPerBlock.y);
-  // dim3 numOfBlocks;
-  // numOfBlocks.x = (n+numOfThreadsPerBlock.x-1)/(numOfThreadsPerBlock.x);
-  // numOfBlocks.y = (blocky+1)/2;  
+  blocky = (m+numOfThreadsPerBlock.y-1)/(numOfThreadsPerBlock.y);
+  dim3 numOfBlocks;
+  numOfBlocks.x = (n+numOfThreadsPerBlock.x-1)/(numOfThreadsPerBlock.x);
+  numOfBlocks.y = (blocky+1)/2;  
   
   // Allocate memory on the device
   cudaMalloc((void**)&d_A, sizeA);
@@ -113,7 +113,7 @@ void matmult_gpu3(int m, int n, int k, double *A, double *B, double *C){
   
   time2 = omp_get_wtime();
 
-  matmultgpu3_colwise<<<numOfBlocks, numOfThreadsPerBlock>>>(m, n, k, d_A, d_B, d_C);
+  matmultgpu3_rowwise<<<numOfBlocks, numOfThreadsPerBlock>>>(m, n, k, d_A, d_B, d_C);
   cudaDeviceSynchronize();
 
   elapsed = omp_get_wtime() - time2;

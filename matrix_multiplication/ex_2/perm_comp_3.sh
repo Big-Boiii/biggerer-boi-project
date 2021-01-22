@@ -24,7 +24,7 @@ SIZES="100 200 500 1000 1500 2000 3000 4000 5000 6000"
 # define the function type in FUNC
 #
 FUNC="lib gpu3"
-OUT="times_3_col.out"
+OUT="times_3.out"
 
 # uncomment and set a reasonable BLKSIZE for the blk version
 #

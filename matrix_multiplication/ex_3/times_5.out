@@ -1,0 +1,210 @@
+Library: lib. Size: 160.
+CPU time: 0.000257
+CPU time: 0.000149
+CPU time: 0.000147
+CPU time: 0.000147
+CPU time: 0.000147
+     600.000  46680.670 0 # matmult_lib
+
+Library: lib. Size: 320.
+CPU time: 0.001314
+CPU time: 0.000937
+CPU time: 0.000927
+CPU time: 0.000930
+CPU time: 0.000929
+    2400.000  64637.163 0 # matmult_lib
+
+Library: lib. Size: 480.
+CPU time: 0.003691
+CPU time: 0.002871
+CPU time: 0.002762
+CPU time: 0.002763
+CPU time: 0.002756
+    5400.000  74374.720 0 # matmult_lib
+
+Library: lib. Size: 1280.
+CPU time: 0.056222
+CPU time: 0.052906
+CPU time: 0.052796
+CPU time: 0.052827
+CPU time: 0.052871
+   38400.000  78340.053 0 # matmult_lib
+
+Library: lib. Size: 1440.
+CPU time: 0.075627
+CPU time: 0.071868
+CPU time: 0.071853
+CPU time: 0.071817
+CPU time: 0.071905
+   48600.000  82223.947 0 # matmult_lib
+
+Library: lib. Size: 1920.
+CPU time: 0.179332
+CPU time: 0.173225
+CPU time: 0.173283
+CPU time: 0.173276
+CPU time: 0.173219
+   86400.000  81129.680 0 # matmult_lib
+
+Library: lib. Size: 3040.
+CPU time: 0.687181
+CPU time: 0.674464
+CPU time: 0.673765
+CPU time: 0.674055
+CPU time: 0.673246
+  216600.000  83043.905 0 # matmult_lib
+
+Library: lib. Size: 4000.
+CPU time: 1.544433
+CPU time: 1.517854
+CPU time: 1.518469
+CPU time: 1.518741
+CPU time: 1.517782
+  375000.000  84015.482 0 # matmult_lib
+
+Library: lib. Size: 5120.
+CPU time: 3.460650
+CPU time: 3.423902
+CPU time: 3.423413
+CPU time: 3.423357
+CPU time: 3.421807
+  614400.000  78244.698 0 # matmult_lib
+
+Library: lib. Size: 6080.
+CPU time: 5.369405
+CPU time: 5.311556
+CPU time: 5.310373
+CPU time: 5.311088
+CPU time: 5.309958
+  866400.000  84453.340 0 # matmult_lib
+
+Library: gpu5. Size: 160.
+Kernel time: 0.000056
+Kernel+copy time: 0.000181
+Kernel time: 0.000028
+Kernel+copy time: 0.000113
+Kernel time: 0.000027
+Kernel+copy time: 0.000112
+Kernel time: 0.000026
+Kernel+copy time: 0.000110
+Kernel time: 0.000028
+Kernel+copy time: 0.000111
+     600.000   8642.155 0 # matmult_gpu5
+
+Library: gpu5. Size: 320.
+Kernel time: 0.000101
+Kernel+copy time: 0.000380
+Kernel time: 0.000074
+Kernel+copy time: 0.000314
+Kernel time: 0.000072
+Kernel+copy time: 0.000309
+Kernel time: 0.000072
+Kernel+copy time: 0.000310
+Kernel time: 0.000072
+Kernel+copy time: 0.000310
+    2400.000  43722.272 0 # matmult_gpu5
+
+Library: gpu5. Size: 480.
+Kernel time: 0.000219
+Kernel+copy time: 0.000743
+Kernel time: 0.000192
+Kernel+copy time: 0.000671
+Kernel time: 0.000188
+Kernel+copy time: 0.000664
+Kernel time: 0.000186
+Kernel+copy time: 0.000664
+Kernel time: 0.000187
+Kernel+copy time: 0.000663
+    5400.000 103787.985 0 # matmult_gpu5
+
+Library: gpu5. Size: 1280.
+Kernel time: 0.002967
+Kernel+copy time: 0.006188
+Kernel time: 0.002939
+Kernel+copy time: 0.006103
+Kernel time: 0.002934
+Kernel+copy time: 0.006095
+Kernel time: 0.002936
+Kernel+copy time: 0.006097
+Kernel time: 0.002935
+Kernel+copy time: 0.006095
+   38400.000 447358.369 0 # matmult_gpu5
+
+Library: gpu5. Size: 1440.
+Kernel time: 0.004159
+Kernel+copy time: 0.008577
+Kernel time: 0.004129
+Kernel+copy time: 0.008121
+Kernel time: 0.004126
+Kernel+copy time: 0.008115
+Kernel time: 0.004122
+Kernel+copy time: 0.008112
+Kernel time: 0.004126
+Kernel+copy time: 0.008119
+   48600.000 507254.762 0 # matmult_gpu5
+
+Library: gpu5. Size: 1920.
+Kernel time: 0.009808
+Kernel+copy time: 0.017189
+Kernel time: 0.009777
+Kernel+copy time: 0.016840
+Kernel time: 0.009772
+Kernel+copy time: 0.016834
+Kernel time: 0.009777
+Kernel+copy time: 0.016840
+Kernel time: 0.009771
+Kernel+copy time: 0.016832
+   86400.000 647336.750 160 # matmult_gpu5
+
+Library: gpu5. Size: 3040.
+Kernel time: 0.038537
+Kernel+copy time: 0.056492
+Kernel time: 0.038504
+Kernel+copy time: 0.059401
+Kernel time: 0.038498
+Kernel+copy time: 0.059398
+Kernel time: 0.038500
+Kernel+copy time: 0.059399
+Kernel time: 0.038497
+Kernel+copy time: 0.059395
+  216600.000 843372.264 3104 # matmult_gpu5
+
+Library: gpu5. Size: 4000.
+Kernel time: 0.087473
+Kernel+copy time: 0.118344
+Kernel time: 0.087443
+Kernel+copy time: 0.128921
+Kernel time: 0.087444
+Kernel+copy time: 0.128923
+Kernel time: 0.087451
+Kernel+copy time: 0.128940
+Kernel time: 0.087460
+Kernel+copy time: 0.128937
+  375000.000 948950.076 16000 # matmult_gpu5
+
+Library: gpu5. Size: 5120.
+Kernel time: 0.183380
+Kernel+copy time: 0.233711
+Kernel time: 0.183347
+Kernel+copy time: 0.255553
+Kernel time: 0.183342
+Kernel+copy time: 0.255547
+Kernel time: 0.183341
+Kernel+copy time: 0.255544
+Kernel time: 0.183343
+Kernel+copy time: 0.255547
+  614400.000 1033530.406 69888 # matmult_gpu5
+
+Library: gpu5. Size: 6080.
+Kernel time: 0.306797
+Kernel+copy time: 0.377730
+Kernel time: 0.306759
+Kernel+copy time: 0.409784
+Kernel time: 0.306760
+Kernel+copy time: 0.408881
+Kernel time: 0.306768
+Kernel+copy time: 0.409803
+Kernel time: 0.306768
+Kernel+copy time: 0.408740
+  866400.000 1084987.769 221184 # matmult_gpu5
+
