@@ -1,0 +1,146 @@
+25
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.015003 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.001545 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.003467 
+50
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.319085 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.004765 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.010642 
+75
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 2.098324 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.011443 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.027735 
+100
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 7.950447 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.025610 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.064559 
+125
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 22.076384 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.054840 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.142096 
+150
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 50.648726 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.108884 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.287197 
+175
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 101.774962 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.202774 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.540290 
+200
+First Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 185.723925 
+Second Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.321013 
+Third Version
+We are going to start the Jacobi-Iteration 
+Elapsed time, Version 3: 0.861059 
+225
+First Version
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-12-24>
+Subject: Job 9175939: <collector> in cluster <dcc> Exited
+
+Job <collector> was submitted from host <n-62-12-23> by user <s202382> in cluster <dcc> at Fri Jan 22 18:48:11 2021
+Job was executed on host(s) <n-62-12-24>, in queue <hpcintrogpu>, as user <s202382> in cluster <dcc> at Fri Jan 22 18:48:04 2021
+</zhome/51/5/153768> was used as the home directory.
+</zhome/51/5/153768/Assignment3/Poisson3D_gpu/jacobi4> was used as the working directory.
+Started at Fri Jan 22 18:48:04 2021
+Terminated at Fri Jan 22 18:57:09 2021
+Results reported at Fri Jan 22 18:57:09 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2018
+# 
+# batch script to run collect on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J collector
+#BSUB -o compare_tolerance.out
+#BSUB -q hpcintrogpu
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 30
+#BSUB -gpu "num=1"
+
+for ((c=25; c<=250; c=c+25))
+do
+    echo $c
+    echo "First Version"
+    jacobi_gpu42 $c 100 0 5 0
+    echo "Second Version"
+    jacobi_gpu43 $c 100 0 5 0
+    echo "Third Version"
+    jacobi_gpu44 $c 100 0 5 0
+done 
+
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   535.42 sec.
+    Max Memory :                                 271 MB
+    Average Memory :                             195.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1777.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   561 sec.
+    Turnaround time :                            538 sec.
+
+The output (if any) is above this job summary.
+

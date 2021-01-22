@@ -1,16 +1,18 @@
 #!/bin/gnuplot
 
 set terminal png enhanced size 1000,600
-set output 'bsl_gpu1.png'
+set output 'bsl_gpu2_copy.png'
 
 
-set xlabel "Matrix Size (N)"
+set xlabel "Memory Footprint (KByte)"
+set logscale x
 #set xtics [1:16]
 #set ytics [1:16]
 set ylabel "Time"
-set title "Compare Performance of Baseline and Single Treaded GPU"
-plot "small_data" using 1:2 title "baseline" with lp,\
-     "small_data" using 1:4 title "gpu1" with lp
+set title "Compare Times with and without data transmission"
+plot "small_data" using (($1*$1*$1*8)/1000):3 title "no-copy" with lp,\
+     "small_data" using (($1*$1*$1*8)/1000):4 title "copy" with lp,\
+     "small_data" using (($1*$1*$1*8)/1000):5 title "copy" with lp
 
      
 

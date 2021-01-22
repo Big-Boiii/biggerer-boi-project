@@ -1,0 +1,60 @@
+100
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.007208 
+ Elapsed (copy) 0.009456 
+200
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.053569 
+ Elapsed (copy) 0.071719 
+300
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.163016 
+ Elapsed (copy) 0.244988 
+400
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 1.462104 
+ Elapsed (copy) 1.724340 
+500
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 3.405094 
+ Elapsed (copy) 0.847808 
+600
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 3.160039 
+ Elapsed (copy) 3.340063 
+700
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 8.604993 
+ Elapsed (copy) 4.485008 
+800
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 5.792279 
+ Elapsed (copy) 4.923245 
+900
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 11.249029 
+ Elapsed (copy) 6.978930 
+1000
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 13.384686 
+ Elapsed (copy) 8.614965 
+1100
+gpu2
+1200
+gpu2
+1300
+gpu2
+1400
+gpu2
+1500
+gpu2

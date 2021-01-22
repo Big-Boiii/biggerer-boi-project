@@ -1,0 +1,22 @@
+100
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.007193 
+ Elapsed (copy) 0.009516 
+200
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.053340 
+ Elapsed (copy) 0.071529 
+300
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.187718 
+ Elapsed (copy) 0.241249 
+400
+gpu2
+We are going to start the Jacobi-Iteration 
+Elapsed (no Copy) 0.423975 
+ Elapsed (copy) 0.569170 
+500
+gpu2
